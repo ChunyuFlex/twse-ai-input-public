@@ -1,0 +1,82 @@
+# 每日台股大盤 AI Input 更新
+
+- 產生時間：2026-07-09 22:43:24
+- 執行環境：GitHub Actions / Python 3.12.13
+
+## 1. 今日更新結果
+- Update TAIEX OHLC CSV：成功，exit code 0
+- Update TWSE market context：成功，exit code 0
+- Update TAIFEX derivatives：成功，exit code 0
+- Build TWSE AI input：成功，exit code 0
+
+## 2. 最新資料日期
+- TAIEX OHLC：2026-07-09
+- Market context row date：2026-07-09
+- Market context latest institutional date：2026-07-09
+- Market context latest breadth date：2026-07-09
+- TAIFEX derivatives：2026-07-09
+
+## 3. 程式判定摘要
+- 現貨狀態：IN｜從UP回到通道內第13天
+- 現貨動作：全出
+- 下一步：突破：UP新突破且StartBreakoutPct>0.36%→追；回測完成：等UP新突破且StartBreakoutPct>0.36%→追
+- 衍生性商品偏向：neutral
+- 衍生性商品風險：medium
+
+## 4. 更新檔案
+- `twse/taiex_ohlc_amount_daily.csv`：2026-07-09 22:41:55，374,820 bytes
+- `twse/twse_market_context_daily.csv`：2026-07-09 22:42:34，1,144 bytes
+- `twse/twse_market_context_summary.csv`：2026-07-09 22:42:34，1,306 bytes
+- `twse/taifex_derivatives_daily.csv`：2026-07-09 22:43:20，7,829 bytes
+- `twse/taifex_options_oi_latest.csv`：2026-07-09 22:41:27，133,010 bytes
+- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-07-09 22:43:24，1,441 bytes
+- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-07-09 22:42:34，1,144 bytes
+- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-07-09 22:42:34，1,306 bytes
+- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-07-09 22:43:24，868 bytes
+- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-07-09 22:43:24，1,979 bytes
+
+## 6. 可貼到 GPT 的提示詞
+
+請搭配 `twse/AI_MODEL_INPUT` 內的 CSV/JSON 使用。
+
+```markdown
+# 台股盤勢分析稿產生指令
+
+請根據本資料夾內的 CSV/JSON，產生一篇「類似財經新聞，但有明確分析判斷」的台股盤勢分析。
+
+## 寫作原則
+
+1. 不要只是列數字；每個重要數字都要說明它代表的盤勢含義。
+2. 現貨技術面以 `01_latest_signal.json`、`02_recent_market_30d.csv` 為主。
+3. 長期規則與勝率以 `04_long_term_backtest_summary.csv`、`05_operational_rule_backtest.csv`、`06_decision_tree_rules.csv` 為主。
+4. 大盤情境資料以 `09_market_context_daily.csv`、`10_market_context_summary.csv` 為輔，用來補充三大法人、融資融券與市場情緒。
+5. 期貨與選擇權以 `11_derivatives_recent_30d.csv`、`12_options_oi_profile_latest.csv`、`13_derivatives_signal_summary.json` 為主。
+6. 衍生性商品資料只做「訊號品質與風險確認」，不要取代現貨布林帶規則。
+7. 若期貨/選擇權資料不足，請明確寫「本次衍生性商品資料不足，判斷以現貨技術面為主」。
+
+## 建議文章結構
+
+1. 今日大盤表現
+2. 技術面與布林帶位置
+3. 期貨籌碼與價差
+4. 選擇權壓力/支撐與情緒
+5. 綜合格局判斷
+6. 操作結論
+
+## 目前程式判定
+
+- 現貨狀態：IN｜從UP回到通道內第13天
+- 現貨動作：全出
+- 下一步：突破：UP新突破且StartBreakoutPct>0.36%→追；回測完成：等UP新突破且StartBreakoutPct>0.36%→追
+- 衍生性商品偏向：neutral
+- 衍生性商品風險：medium
+- 寫作提醒：衍生性商品結構沒有明確單邊訊號，文章應以現貨技術面為主、期權作輔助。
+
+## 口吻
+
+語氣可以像財經新聞，但要比一般新聞多一層判斷。避免使用「可能、或許」堆砌；可以說明條件，例如：
+
+- 若站回某價位，代表跌勢暫時收斂。
+- 若無法收復某價位，代表反彈仍屬弱勢。
+- 若期貨空單維持高水位但未增加，代表空方沒有擴大攻擊，但避險壓力仍在。
+```
