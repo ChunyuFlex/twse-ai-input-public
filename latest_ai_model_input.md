@@ -1,6 +1,6 @@
 # AI_MODEL_INPUT
 
-Generated at: 2026-07-09 22:43:26 UTC
+Generated at: 2026-07-09 23:50:18 UTC
 
 
 ## 00_README.md
@@ -9,7 +9,7 @@ Generated at: 2026-07-09 22:43:26 UTC
 # TAIEX AI 模型輸入資料包
 
 資料最新日期：2026-07-09
-產生批次：20260709_224321
+產生批次：20260709_235013
 
 這個資料夾只放需要餵給 AI 的資料。完整長期資料仍用於回測，但 AI 主要閱讀近期盤勢、長期統計摘要，以及衍生性商品判讀摘要。
 
@@ -53,7 +53,7 @@ Generated at: 2026-07-09 22:43:26 UTC
 
 ```text
 {
-  "generated_at": "20260709_224321",
+  "generated_at": "20260709_235013",
   "data_latest_date": "2026-07-09",
   "signal": "📌 今日一行｜2026-07-09｜IN｜從UP回到通道內第13天｜StartBreakoutPct=NA｜TodayBreakoutPct=NA｜BB_MID=45,868.71｜Close-BB_MID=-514.10｜Low-BB_MID=-516.30｜現在：全出｜下一步：突破：UP新突破且StartBreakoutPct>0.36%→追；回測完成：等UP新突破且StartBreakoutPct>0.36%→追",
   "status": "IN｜從UP回到通道內第13天",
@@ -192,7 +192,7 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
 2026-07-03,-77782612615,7502170019,-3259588256,-73540030852,828,192,48,636,0.8117647058823529,-81052,6178,87230
 2026-07-06,-25504496320,7163451017,-9721009272,-28062054575,534,431,92,103,0.5533678756476684,-80087,6297,86384
 2026-07-07,-54731070648,9682759752,-48733477692,-93781788588,128,892,46,-764,0.12549019607843137,-80042,6562,86604
-2026-07-08,-37948987989,12680292684,-16942740236,-42211435541,394,599,69,-205,0.39677744209466265,-81268,5632,86900
+2026-07-08,-37948987989,11961229572,-16942740236,-42930498653,394,599,69,-205,0.39677744209466265,-81268,5632,86900
 2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,411,552,74,-141,0.42679127725856697,-80730,6562,87292
 
 ```
@@ -201,7 +201,7 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
 
 ```text
 ﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi,latest_institutional_date,latest_foreign_net_amount,latest_investment_trust_net_amount,latest_dealer_net_amount,latest_institutional_net_amount,latest_breadth_date,latest_advancers_stock,latest_decliners_stock,latest_unchanged_stock,latest_adl_net_stock,latest_adl_ratio_stock,latest_foreign_tx_oi_date,latest_foreign_tx_net_oi,latest_foreign_tx_long_oi,latest_foreign_tx_short_oi,institutional_net_amount_3d_sum,foreign_net_amount_3d_sum,adl_net_stock_3d_sum,foreign_tx_net_oi_3d_change,institutional_net_amount_5d_sum,foreign_net_amount_5d_sum,adl_net_stock_5d_sum,foreign_tx_net_oi_5d_change,institutional_net_amount_10d_sum,foreign_net_amount_10d_sum,adl_net_stock_10d_sum,foreign_tx_net_oi_10d_change
-2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,411,552,74,-141,0.42679127725856697,-80730,6562,87292,2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,2026-07-09,411,552,74,-141,0.42679127725856697,2026-07-09,-80730,6562,87292,-171016605706,-139932875066,-1110,-688,-272618691133,-243219984001,-371,322,-287679528726,-300399626864,322,2333
+2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,411,552,74,-141,0.42679127725856697,-80730,6562,87292,2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,2026-07-09,411,552,74,-141,0.42679127725856697,2026-07-09,-80730,6562,87292,-171735668818,-139932875066,-1110,-688,-273337754245,-243219984001,-371,322,-288398591838,-300399626864,322,2333
 
 ```
 
@@ -3537,12 +3537,17 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
     "basis_z20": null
   },
   "foreign_futures": null,
-  "put_call_ratio": null,
+  "put_call_ratio": {
+    "oi": 0.8357831803942767
+  },
   "option_wall": {
-    "call_pressure_strike": null,
-    "put_support_strike": null,
-    "call_distance_pct": null,
-    "put_distance_pct": null
+    "call_pressure_strike": 46000.0,
+    "put_support_strike": 45000.0,
+    "call_distance_pct": 0.01422986549768589,
+    "put_distance_pct": -0.007818609839220326,
+    "call_max_oi": 13589.0,
+    "put_max_oi": 5258.0,
+    "source": "15_options_oi_summary.json"
   }
 }
 ```
@@ -3590,4 +3595,79 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
 - 若無法收復某價位，代表反彈仍屬弱勢。
 - 若期貨空單維持高水位但未增加，代表空方沒有擴大攻擊，但避險壓力仍在。
 
+```
+
+## 15_options_oi_summary.json
+
+```text
+{
+  "data_date": "2026-07-08",
+  "spot_close": 45354.61,
+  "put_call_oi_ratio": 0.8357831803942767,
+  "call_max_oi_strike": 46000.0,
+  "call_max_oi": 13589.0,
+  "call_max_oi_distance_pct": 1.422986549768589,
+  "put_max_oi_strike": 45000.0,
+  "put_max_oi": 5258.0,
+  "put_max_oi_distance_pct": -0.7818609839220326,
+  "top_call_oi_strikes": [
+    {
+      "strike": 46000.0,
+      "open_interest": 13589.0,
+      "distance_pct": 1.422986549768589
+    },
+    {
+      "strike": 50000.0,
+      "open_interest": 7309.0,
+      "distance_pct": 10.242376684531076
+    },
+    {
+      "strike": 48000.0,
+      "open_interest": 5907.0,
+      "distance_pct": 5.832681617149832
+    },
+    {
+      "strike": 49000.0,
+      "open_interest": 5589.0,
+      "distance_pct": 8.037529150840452
+    },
+    {
+      "strike": 49500.0,
+      "open_interest": 5387.0,
+      "distance_pct": 9.139952917685765
+    }
+  ],
+  "top_put_oi_strikes": [
+    {
+      "strike": 45000.0,
+      "open_interest": 5258.0,
+      "distance_pct": -0.7818609839220326
+    },
+    {
+      "strike": 44000.0,
+      "open_interest": 3792.0,
+      "distance_pct": -2.986708517612654
+    },
+    {
+      "strike": 43000.0,
+      "open_interest": 3744.0,
+      "distance_pct": -5.191556051303276
+    },
+    {
+      "strike": 42000.0,
+      "open_interest": 3726.0,
+      "distance_pct": -7.396403584993896
+    },
+    {
+      "strike": 40000.0,
+      "open_interest": 3210.0,
+      "distance_pct": -11.80609865237514
+    }
+  ],
+  "options_sentiment_interpretation": "Put and Call OI are relatively balanced; options positioning does not show an extreme one-sided sentiment signal.",
+  "call_wall_interpretation": "Major Call OI is concentrated at 46000, about 1.42% above spot; this is a nearby upside pressure zone.",
+  "put_wall_interpretation": "Major Put OI is concentrated at 45000, about 0.78% below spot; this is a nearby downside support/defense zone.",
+  "warnings": [],
+  "missing_columns": []
+}
 ```

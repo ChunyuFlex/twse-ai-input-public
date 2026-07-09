@@ -1,6 +1,6 @@
 # 每日台股大盤 AI Input 更新
 
-- 產生時間：2026-07-09 22:43:24
+- 產生時間：2026-07-09 23:50:16
 - 執行環境：GitHub Actions / Python 3.12.13
 
 ## 1. 今日更新結果
@@ -8,6 +8,8 @@
 - Update TWSE market context：成功，exit code 0
 - Update TAIFEX derivatives：成功，exit code 0
 - Build TWSE AI input：成功，exit code 0
+- Build options OI summary：成功，exit code 0
+- Generate AI article：失敗，exit code 2
 
 ## 2. 最新資料日期
 - TAIEX OHLC：2026-07-09
@@ -24,20 +26,31 @@
 - 衍生性商品風險：medium
 
 ## 4. 更新檔案
-- `twse/taiex_ohlc_amount_daily.csv`：2026-07-09 22:41:55，374,820 bytes
-- `twse/twse_market_context_daily.csv`：2026-07-09 22:42:34，1,144 bytes
-- `twse/twse_market_context_summary.csv`：2026-07-09 22:42:34，1,306 bytes
-- `twse/taifex_derivatives_daily.csv`：2026-07-09 22:43:20，7,829 bytes
-- `twse/taifex_options_oi_latest.csv`：2026-07-09 22:41:27，133,010 bytes
-- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-07-09 22:43:24，1,441 bytes
-- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-07-09 22:42:34，1,144 bytes
-- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-07-09 22:42:34，1,306 bytes
-- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-07-09 22:43:24，868 bytes
-- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-07-09 22:43:24，1,979 bytes
+- `twse/taiex_ohlc_amount_daily.csv`：2026-07-09 23:48:54，374,820 bytes
+- `twse/twse_market_context_daily.csv`：2026-07-09 23:49:27，1,144 bytes
+- `twse/twse_market_context_summary.csv`：2026-07-09 23:49:27，1,306 bytes
+- `twse/taifex_derivatives_daily.csv`：2026-07-09 23:50:13，7,829 bytes
+- `twse/taifex_options_oi_latest.csv`：2026-07-09 23:48:31，133,010 bytes
+- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-07-09 23:50:15，1,441 bytes
+- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-07-09 23:49:27，1,144 bytes
+- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-07-09 23:49:27，1,306 bytes
+- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-07-09 23:50:16，1,034 bytes
+- `twse/AI_MODEL_INPUT/15_options_oi_summary.json`：2026-07-09 23:50:16，1,950 bytes
+- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-07-09 23:50:15，1,979 bytes
 
-## 6. 可貼到 GPT 的提示詞
+## 5. 失敗輸出
+### Generate AI article
+```text
+OPENAI_API_KEY is not configured. Set it in GitHub repository Settings > Secrets and variables > Actions > Repository secrets.
+```
 
-請搭配 `twse/AI_MODEL_INPUT` 內的 CSV/JSON 使用。
+## 6. AI 自動產生文章
+
+OPENAI_API_KEY is not configured. Set it in GitHub repository Settings > Secrets and variables > Actions > Repository secrets.
+
+## 7. 備用提示詞
+
+以下僅作為備用。正常情況下，本 workflow 已經自動產生上方文章，不需要手動貼給 GPT。
 
 ```markdown
 # 台股盤勢分析稿產生指令
