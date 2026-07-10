@@ -1,6 +1,6 @@
 # AI_MODEL_INPUT
 
-Generated at: 2026-07-09 23:50:18 UTC
+Generated at: 2026-07-10 03:33:07 UTC
 
 
 ## 00_README.md
@@ -9,7 +9,7 @@ Generated at: 2026-07-09 23:50:18 UTC
 # TAIEX AI 模型輸入資料包
 
 資料最新日期：2026-07-09
-產生批次：20260709_235013
+產生批次：20260710_033302
 
 這個資料夾只放需要餵給 AI 的資料。完整長期資料仍用於回測，但 AI 主要閱讀近期盤勢、長期統計摘要，以及衍生性商品判讀摘要。
 
@@ -53,7 +53,7 @@ Generated at: 2026-07-09 23:50:18 UTC
 
 ```text
 {
-  "generated_at": "20260709_235013",
+  "generated_at": "20260710_033302",
   "data_latest_date": "2026-07-09",
   "signal": "📌 今日一行｜2026-07-09｜IN｜從UP回到通道內第13天｜StartBreakoutPct=NA｜TodayBreakoutPct=NA｜BB_MID=45,868.71｜Close-BB_MID=-514.10｜Low-BB_MID=-516.30｜現在：全出｜下一步：突破：UP新突破且StartBreakoutPct>0.36%→追；回測完成：等UP新突破且StartBreakoutPct>0.36%→追",
   "status": "IN｜從UP回到通道內第13天",
@@ -185,23 +185,23 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
 ## 09_market_context_daily.csv
 
 ```text
-﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi
-2026-06-30,-508728992,365126892,14585072281,14441470181,747,237,66,510,0.7591463414634146,-83063,5391,88454
-2026-07-01,32375599806,15602734212,5938476317,53916810335,417,560,80,-143,0.42681678607983625,-84168,5526,89694
-2026-07-02,-89046513677,9955637650,-4328242082,-83419118109,649,323,75,326,0.6676954732510288,-84487,4770,89257
-2026-07-03,-77782612615,7502170019,-3259588256,-73540030852,828,192,48,636,0.8117647058823529,-81052,6178,87230
-2026-07-06,-25504496320,7163451017,-9721009272,-28062054575,534,431,92,103,0.5533678756476684,-80087,6297,86384
-2026-07-07,-54731070648,9682759752,-48733477692,-93781788588,128,892,46,-764,0.12549019607843137,-80042,6562,86604
-2026-07-08,-37948987989,11961229572,-16942740236,-42930498653,394,599,69,-205,0.39677744209466265,-81268,5632,86900
-2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,411,552,74,-141,0.42679127725856697,-80730,6562,87292
+﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi,fetch_taifex_foreign_tx_oi_error
+2026-07-01,32375599806,15602734212,5938476317,53916810335,417,560,80,-143,0.42681678607983625,-84168,5526,89694,
+2026-07-02,-89046513677,9955637650,-4328242082,-83419118109,649,323,75,326,0.6676954732510288,-84487,4770,89257,
+2026-07-03,-77782612615,7502170019,-3259588256,-73540030852,828,192,48,636,0.8117647058823529,-81052,6178,87230,
+2026-07-06,-25504496320,7163451017,-9721009272,-28062054575,534,431,92,103,0.5533678756476684,-80087,6297,86384,
+2026-07-07,-54731070648,9682759752,-48733477692,-93781788588,128,892,46,-764,0.12549019607843137,-80042,6562,86604,
+2026-07-08,-37948987989,12680292684,-16942740236,-42211435541,394,599,69,-205,0.39677744209466265,-81268,5632,86900,
+2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,411,552,74,-141,0.42679127725856697,-80730,6562,87292,
+2026-07-10,,,0,,,,,,,,,,找不到外資臺股期貨未平倉資料
 
 ```
 
 ## 10_market_context_summary.csv
 
 ```text
-﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi,latest_institutional_date,latest_foreign_net_amount,latest_investment_trust_net_amount,latest_dealer_net_amount,latest_institutional_net_amount,latest_breadth_date,latest_advancers_stock,latest_decliners_stock,latest_unchanged_stock,latest_adl_net_stock,latest_adl_ratio_stock,latest_foreign_tx_oi_date,latest_foreign_tx_net_oi,latest_foreign_tx_long_oi,latest_foreign_tx_short_oi,institutional_net_amount_3d_sum,foreign_net_amount_3d_sum,adl_net_stock_3d_sum,foreign_tx_net_oi_3d_change,institutional_net_amount_5d_sum,foreign_net_amount_5d_sum,adl_net_stock_5d_sum,foreign_tx_net_oi_5d_change,institutional_net_amount_10d_sum,foreign_net_amount_10d_sum,adl_net_stock_10d_sum,foreign_tx_net_oi_10d_change
-2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,411,552,74,-141,0.42679127725856697,-80730,6562,87292,2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,2026-07-09,411,552,74,-141,0.42679127725856697,2026-07-09,-80730,6562,87292,-171735668818,-139932875066,-1110,-688,-273337754245,-243219984001,-371,322,-288398591838,-300399626864,322,2333
+﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,fetch_taifex_foreign_tx_oi_error,latest_institutional_date,latest_foreign_net_amount,latest_investment_trust_net_amount,latest_dealer_net_amount,latest_institutional_net_amount,latest_breadth_date,latest_advancers_stock,latest_decliners_stock,latest_unchanged_stock,latest_adl_net_stock,latest_adl_ratio_stock,latest_foreign_tx_oi_date,latest_foreign_tx_net_oi,latest_foreign_tx_long_oi,latest_foreign_tx_short_oi,institutional_net_amount_3d_sum,foreign_net_amount_3d_sum,adl_net_stock_3d_sum,foreign_tx_net_oi_3d_change,institutional_net_amount_5d_sum,foreign_net_amount_5d_sum,adl_net_stock_5d_sum,foreign_tx_net_oi_5d_change,institutional_net_amount_10d_sum,foreign_net_amount_10d_sum,adl_net_stock_10d_sum,foreign_tx_net_oi_10d_change
+2026-07-10,,,0,,,,,,,找不到外資臺股期貨未平倉資料,2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,2026-07-09,411,552,74,-141,0.42679127725856697,2026-07-09,-80730,6562,87292,-77234817118,-85201804418,-346,538,-199078660281,-165437371386,-1007,-643,-302120998907,-299890897872,-188,3438
 
 ```
 

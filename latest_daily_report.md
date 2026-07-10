@@ -1,6 +1,6 @@
 # 每日台股大盤 AI Input 更新
 
-- 產生時間：2026-07-09 23:50:16
+- 產生時間：2026-07-10 03:33:04
 - 執行環境：GitHub Actions / Python 3.12.13
 
 ## 1. 今日更新結果
@@ -13,7 +13,7 @@
 
 ## 2. 最新資料日期
 - TAIEX OHLC：2026-07-09
-- Market context row date：2026-07-09
+- Market context row date：2026-07-10
 - Market context latest institutional date：2026-07-09
 - Market context latest breadth date：2026-07-09
 - TAIFEX derivatives：2026-07-09
@@ -26,17 +26,17 @@
 - 衍生性商品風險：medium
 
 ## 4. 更新檔案
-- `twse/taiex_ohlc_amount_daily.csv`：2026-07-09 23:48:54，374,820 bytes
-- `twse/twse_market_context_daily.csv`：2026-07-09 23:49:27，1,144 bytes
-- `twse/twse_market_context_summary.csv`：2026-07-09 23:49:27，1,306 bytes
-- `twse/taifex_derivatives_daily.csv`：2026-07-09 23:50:13，7,829 bytes
-- `twse/taifex_options_oi_latest.csv`：2026-07-09 23:48:31，133,010 bytes
-- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-07-09 23:50:15，1,441 bytes
-- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-07-09 23:49:27，1,144 bytes
-- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-07-09 23:49:27，1,306 bytes
-- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-07-09 23:50:16，1,034 bytes
-- `twse/AI_MODEL_INPUT/15_options_oi_summary.json`：2026-07-09 23:50:16，1,950 bytes
-- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-07-09 23:50:15，1,979 bytes
+- `twse/taiex_ohlc_amount_daily.csv`：2026-07-10 03:31:31，374,820 bytes
+- `twse/twse_market_context_daily.csv`：2026-07-10 03:32:06，1,143 bytes
+- `twse/twse_market_context_summary.csv`：2026-07-10 03:32:06，1,230 bytes
+- `twse/taifex_derivatives_daily.csv`：2026-07-10 03:33:02，7,829 bytes
+- `twse/taifex_options_oi_latest.csv`：2026-07-10 03:31:07，133,010 bytes
+- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-07-10 03:33:04，1,441 bytes
+- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-07-10 03:32:06，1,143 bytes
+- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-07-10 03:32:06，1,230 bytes
+- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-07-10 03:33:04，1,034 bytes
+- `twse/AI_MODEL_INPUT/15_options_oi_summary.json`：2026-07-10 03:33:04，1,950 bytes
+- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-07-10 03:33:04，1,979 bytes
 
 ## 5. 失敗輸出
 ### Generate AI article
