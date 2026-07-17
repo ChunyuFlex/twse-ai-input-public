@@ -1,6 +1,6 @@
 # 每日台股大盤 AI Input 更新
 
-- 產生時間：2026-07-16 22:38:47
+- 產生時間：2026-07-17 22:32:12
 - 執行環境：GitHub Actions / Python 3.12.13
 
 ## 1. 今日更新結果
@@ -12,31 +12,31 @@
 - Generate AI article：失敗，exit code 2
 
 ## 2. 最新資料日期
-- TAIEX OHLC：2026-07-16
-- Market context row date：2026-07-16
-- Market context latest institutional date：2026-07-16
-- Market context latest breadth date：2026-07-16
+- TAIEX OHLC：2026-07-17
+- Market context row date：2026-07-17
+- Market context latest institutional date：2026-07-17
+- Market context latest breadth date：2026-07-17
 - TAIFEX derivatives：2026-07-09
 
 ## 3. 程式判定摘要
-- 現貨狀態：IN｜從UP回到通道內第17天
+- 現貨狀態：DN｜新突破
 - 現貨動作：全出
-- 下一步：突破：UP新突破且StartBreakoutPct>0.36%→追；回測完成：等UP新突破且StartBreakoutPct>0.36%→追
+- 下一步：
 - 衍生性商品偏向：neutral
 - 衍生性商品風險：medium
 
 ## 4. 更新檔案
-- `twse/taiex_ohlc_amount_daily.csv`：2026-07-16 22:36:49，375,068 bytes
-- `twse/twse_market_context_daily.csv`：2026-07-16 22:37:41，1,153 bytes
-- `twse/twse_market_context_summary.csv`：2026-07-16 22:37:41，1,308 bytes
-- `twse/taifex_derivatives_daily.csv`：2026-07-16 22:38:45，7,829 bytes
-- `twse/taifex_options_oi_latest.csv`：2026-07-16 22:36:30，133,010 bytes
-- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-07-16 22:38:47，1,436 bytes
-- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-07-16 22:37:41，1,153 bytes
-- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-07-16 22:37:41，1,308 bytes
-- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-07-16 22:38:47，1,036 bytes
-- `twse/AI_MODEL_INPUT/15_options_oi_summary.json`：2026-07-16 22:38:47，1,953 bytes
-- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-07-16 22:38:47，1,979 bytes
+- `twse/taiex_ohlc_amount_daily.csv`：2026-07-17 22:30:14，375,131 bytes
+- `twse/twse_market_context_daily.csv`：2026-07-17 22:30:54，1,153 bytes
+- `twse/twse_market_context_summary.csv`：2026-07-17 22:30:54，1,312 bytes
+- `twse/taifex_derivatives_daily.csv`：2026-07-17 22:32:09，7,829 bytes
+- `twse/taifex_options_oi_latest.csv`：2026-07-17 22:29:49，133,010 bytes
+- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-07-17 22:32:12，1,192 bytes
+- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-07-17 22:30:54，1,153 bytes
+- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-07-17 22:30:54，1,312 bytes
+- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-07-17 22:32:12，1,033 bytes
+- `twse/AI_MODEL_INPUT/15_options_oi_summary.json`：2026-07-17 22:32:12，1,993 bytes
+- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-07-17 22:32:12，1,846 bytes
 
 ## 5. 失敗輸出
 ### Generate AI article
@@ -78,9 +78,9 @@ OPENAI_API_KEY is not configured. Set it in GitHub repository Settings > Secrets
 
 ## 目前程式判定
 
-- 現貨狀態：IN｜從UP回到通道內第17天
+- 現貨狀態：DN｜新突破
 - 現貨動作：全出
-- 下一步：突破：UP新突破且StartBreakoutPct>0.36%→追；回測完成：等UP新突破且StartBreakoutPct>0.36%→追
+- 下一步：
 - 衍生性商品偏向：neutral
 - 衍生性商品風險：medium
 - 寫作提醒：衍生性商品結構沒有明確單邊訊號，文章應以現貨技術面為主、期權作輔助。
