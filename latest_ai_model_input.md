@@ -1,6 +1,6 @@
 # AI_MODEL_INPUT
 
-Generated at: 2026-07-18 22:33:18 UTC
+Generated at: 2026-07-19 22:34:52 UTC
 
 
 ## 00_README.md
@@ -9,7 +9,7 @@ Generated at: 2026-07-18 22:33:18 UTC
 # TAIEX AI 模型輸入資料包
 
 資料最新日期：2026-07-17
-產生批次：20260718_223314
+產生批次：20260719_223448
 
 這個資料夾只放需要餵給 AI 的資料。完整長期資料仍用於回測，但 AI 主要閱讀近期盤勢、長期統計摘要，以及衍生性商品判讀摘要。
 
@@ -53,7 +53,7 @@ Generated at: 2026-07-18 22:33:18 UTC
 
 ```text
 {
-  "generated_at": "20260718_223314",
+  "generated_at": "20260719_223448",
   "data_latest_date": "2026-07-17",
   "signal": "📌 今日一行｜2026-07-17｜DN｜新突破｜StartBreakoutPct=3.75%｜TodayBreakoutPct=3.75%｜BB_MID=45,850.92｜Close-BB_MID=-3,179.65｜Low-BB_MID=-3,179.65｜現在：全出",
   "status": "DN｜新突破",
@@ -185,14 +185,13 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
 ## 09_market_context_daily.csv
 
 ```text
-﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi,fetch_taifex_foreign_tx_oi_error
-2026-07-09,-47252816429,19900600663,-7671165811,-35023381577,411,552,74,-141,0.42679127725856697,-80730,6562,87292,
-2026-07-10,,,0,,,,,,,,,,找不到外資臺股期貨未平倉資料
-2026-07-13,-19559763888,12578555606,-11098303301,-18079511583,356,653,54,-297,0.3528245787908821,-81066,10564,91630,
-2026-07-14,-51892812507,11001561256,-38291146262,-79182397513,207,800,50,-593,0.20556107249255212,-83390,10732,94122,
-2026-07-15,-1415388772,12536287746,10126103647,21247002621,893,125,42,768,0.8772102161100196,-79557,7319,86876,
-2026-07-16,-48334970779,8645131851,-3357605729,-43047444657,371,597,81,-226,0.38326446280991733,-84453,5895,90348,
-2026-07-17,-188314549057,7347365087,-82179494166,-263146678136,87,960,23,-873,0.0830945558739255,-86189,6867,93056,
+﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,fetch_taifex_foreign_tx_oi_error,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi
+2026-07-10,,,0,,,,,,,找不到外資臺股期貨未平倉資料,,,
+2026-07-13,-19559763888,12578555606,-11098303301,-18079511583,356,653,54,-297,0.3528245787908821,,-81066,10564,91630
+2026-07-14,-51892812507,11001561256,-38291146262,-79182397513,207,800,50,-593,0.20556107249255212,,-83390,10732,94122
+2026-07-15,-1415388772,12536287746,10126103647,21247002621,893,125,42,768,0.8772102161100196,,-79557,7319,86876
+2026-07-16,-48334970779,8645131851,-3357605729,-43047444657,371,597,81,-226,0.38326446280991733,,-84453,5895,90348
+2026-07-17,-188314549057,7347365087,-82179494166,-263146678136,87,960,23,-873,0.0830945558739255,,-86189,6867,93056
 
 ```
 
@@ -200,7 +199,7 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
 
 ```text
 ﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi,latest_institutional_date,latest_foreign_net_amount,latest_investment_trust_net_amount,latest_dealer_net_amount,latest_institutional_net_amount,latest_breadth_date,latest_advancers_stock,latest_decliners_stock,latest_unchanged_stock,latest_adl_net_stock,latest_adl_ratio_stock,latest_foreign_tx_oi_date,latest_foreign_tx_net_oi,latest_foreign_tx_long_oi,latest_foreign_tx_short_oi,institutional_net_amount_3d_sum,foreign_net_amount_3d_sum,adl_net_stock_3d_sum,foreign_tx_net_oi_3d_change,institutional_net_amount_5d_sum,foreign_net_amount_5d_sum,adl_net_stock_5d_sum,foreign_tx_net_oi_5d_change,institutional_net_amount_10d_sum,foreign_net_amount_10d_sum,adl_net_stock_10d_sum,foreign_tx_net_oi_10d_change
-2026-07-17,-188314549057,7347365087,-82179494166,-263146678136,87,960,23,-873,0.0830945558739255,-86189,6867,93056,2026-07-17,-188314549057,7347365087,-82179494166,-263146678136,2026-07-17,87,960,23,-873,0.0830945558739255,2026-07-17,-86189,6867,93056,-284947120172,-238064908608,-331,-6632,-382209029268,-309517485003,-1221,-5123,-417232410845,-356770301432,-1362,-5459
+2026-07-17,-188314549057,7347365087,-82179494166,-263146678136,87,960,23,-873,0.0830945558739255,-86189,6867,93056,2026-07-17,-188314549057,7347365087,-82179494166,-263146678136,2026-07-17,87,960,23,-873,0.0830945558739255,2026-07-17,-86189,6867,93056,-284947120172,-238064908608,-331,-6632,-382209029268,-309517485003,-1221,-5123,-382209029268,-309517485003,-1221,-5123
 
 ```
 
