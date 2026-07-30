@@ -1,6 +1,6 @@
 # 每日台股大盤 AI Input 更新
 
-- 產生時間：2026-07-29 22:38:58
+- 產生時間：2026-07-30 22:47:15
 - 執行環境：GitHub Actions / Python 3.12.13
 
 ## 1. 今日更新結果
@@ -12,31 +12,31 @@
 - Generate AI article：失敗，exit code 2
 
 ## 2. 最新資料日期
-- TAIEX OHLC：2026-07-29
-- Market context row date：2026-07-29
-- Market context latest institutional date：2026-07-29
-- Market context latest breadth date：2026-07-29
+- TAIEX OHLC：2026-07-30
+- Market context row date：2026-07-30
+- Market context latest institutional date：2026-07-30
+- Market context latest breadth date：2026-07-30
 - TAIFEX derivatives：2026-07-09
 
 ## 3. 程式判定摘要
-- 現貨狀態：DN｜延續第2天
+- 現貨狀態：DN｜延續第3天
 - 現貨動作：全出
 - 下一步：
 - 衍生性商品偏向：neutral
 - 衍生性商品風險：medium
 
 ## 4. 更新檔案
-- `twse/taiex_ohlc_amount_daily.csv`：2026-07-29 22:37:34，375,627 bytes
-- `twse/twse_market_context_daily.csv`：2026-07-29 22:38:13，1,136 bytes
-- `twse/twse_market_context_summary.csv`：2026-07-29 22:38:13，1,315 bytes
-- `twse/taifex_derivatives_daily.csv`：2026-07-29 22:38:56，7,829 bytes
-- `twse/taifex_options_oi_latest.csv`：2026-07-29 22:37:09，133,010 bytes
-- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-07-29 22:38:58，1,201 bytes
-- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-07-29 22:38:13，1,136 bytes
-- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-07-29 22:38:13，1,315 bytes
-- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-07-29 22:38:58，1,035 bytes
-- `twse/AI_MODEL_INPUT/15_options_oi_summary.json`：2026-07-29 22:38:58，1,999 bytes
-- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-07-29 22:38:58，1,850 bytes
+- `twse/taiex_ohlc_amount_daily.csv`：2026-07-30 22:45:29，375,689 bytes
+- `twse/twse_market_context_daily.csv`：2026-07-30 22:46:17，1,140 bytes
+- `twse/twse_market_context_summary.csv`：2026-07-30 22:46:17，1,316 bytes
+- `twse/taifex_derivatives_daily.csv`：2026-07-30 22:47:12，7,829 bytes
+- `twse/taifex_options_oi_latest.csv`：2026-07-30 22:45:04，133,010 bytes
+- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-07-30 22:47:15，1,198 bytes
+- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-07-30 22:46:17，1,140 bytes
+- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-07-30 22:46:17，1,316 bytes
+- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-07-30 22:47:15，1,033 bytes
+- `twse/AI_MODEL_INPUT/15_options_oi_summary.json`：2026-07-30 22:47:15，1,998 bytes
+- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-07-30 22:47:15，1,850 bytes
 
 ## 5. 失敗輸出
 ### Generate AI article
@@ -78,7 +78,7 @@ OPENAI_API_KEY is not configured. Set it in GitHub repository Settings > Secrets
 
 ## 目前程式判定
 
-- 現貨狀態：DN｜延續第2天
+- 現貨狀態：DN｜延續第3天
 - 現貨動作：全出
 - 下一步：
 - 衍生性商品偏向：neutral
