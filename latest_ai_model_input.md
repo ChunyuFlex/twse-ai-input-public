@@ -1,6 +1,6 @@
 # AI_MODEL_INPUT
 
-Generated at: 2026-08-02 22:38:37 UTC
+Generated at: 2026-08-03 22:40:36 UTC
 
 
 ## 00_README.md
@@ -8,8 +8,8 @@ Generated at: 2026-08-02 22:38:37 UTC
 ```text
 # TAIEX AI 模型輸入資料包
 
-資料最新日期：2026-07-31
-產生批次：20260802_223831
+資料最新日期：2026-08-03
+產生批次：20260803_224032
 
 這個資料夾只放需要餵給 AI 的資料。完整長期資料仍用於回測，但 AI 主要閱讀近期盤勢、長期統計摘要，以及衍生性商品判讀摘要。
 
@@ -32,7 +32,7 @@ Generated at: 2026-08-02 22:38:37 UTC
 
 - 現貨近期資料：30 個交易日
 - 近期突破事件：22 筆
-- 長期回測區間：2000-01-29 ～ 2026-07-31
+- 長期回測區間：2000-01-29 ～ 2026-08-03
 - 長期突破事件總數：473 筆
 - 決策樹是否可用：是
 - 衍生性商品資料是否可用：是
@@ -53,18 +53,18 @@ Generated at: 2026-08-02 22:38:37 UTC
 
 ```text
 {
-  "generated_at": "20260802_223831",
-  "data_latest_date": "2026-07-31",
-  "signal": "📌 今日一行｜2026-07-31｜IN｜從DN回到通道內第1天｜StartBreakoutPct=NA｜TodayBreakoutPct=NA｜BB_MID=44,114.76｜Close-BB_MID=-995.01｜Low-BB_MID=-2,504.35｜現在：等回測｜下一步：等待：UP新突破且StartBreakoutPct>0.36%→追",
-  "status": "IN｜從DN回到通道內第1天",
+  "generated_at": "20260803_224032",
+  "data_latest_date": "2026-08-03",
+  "signal": "📌 今日一行｜2026-08-03｜IN｜從DN回到通道內第2天｜StartBreakoutPct=NA｜TodayBreakoutPct=NA｜BB_MID=43,945.05｜Close-BB_MID=-558.64｜Low-BB_MID=-1,164.63｜現在：等回測｜下一步：等待：UP新突破且StartBreakoutPct>0.36%→追",
+  "status": "IN｜從DN回到通道內第2天",
   "action": "等回測",
   "next": "等待：UP新突破且StartBreakoutPct>0.36%→追",
   "start_breakout_pct": null,
   "today_breakout_pct": null,
-  "close": 43119.75,
-  "bb_mid": 44114.7615,
-  "close_minus_bb_mid": -995.0115000000005,
-  "low_minus_bb_mid": -2504.351499999997,
+  "close": 43386.41,
+  "bb_mid": 43945.051,
+  "close_minus_bb_mid": -558.640999999996,
+  "low_minus_bb_mid": -1164.6310000000012,
   "entry_rule": {
     "condition": "UP 新突破且 StartBreakoutPct > UP_ENTRY_BREAKOUT_PCT_MIN",
     "up_entry_breakout_pct_min": 0.0036,
@@ -73,8 +73,8 @@ Generated at: 2026-08-02 22:38:37 UTC
   },
   "history_used_for_backtest": {
     "start": "2000-01-29",
-    "end": "2026-07-31",
-    "trading_days": 6400,
+    "end": "2026-08-03",
+    "trading_days": 6401,
     "events": 473
   },
   "derivatives": {
@@ -91,7 +91,6 @@ Generated at: 2026-08-02 22:38:37 UTC
 
 ```text
 ﻿Date,Open,High,Low,Close,Amount,BB_MID,BB_UP_S,BB_DN_S,BB_BW,CloseMinusBBMid,LowMinusBBMid,OutDir,WaveStartDate,DayInWave,EvtUp,EvtDn,Inside,UpBreakoutPct,DnBreakoutPct,ClosePos,VolRatio,UpperWickRatio
-2026-06-18,45972.26,46565.7,45972.26,46465.2,1606195402305.0,44623.336500000005,46951.72909534605,41785.244904653955,0.10503724330467096,1841.8634999999922,1348.9234999999971,IN,,0,0,0,1,-0.010903019216101194,-0.10487685284012865,0.8306484227554582,1.1335711003163502,0.16935157724454172
 2026-06-22,46679.57,47871.19,46679.57,47741.51,1515817959773.0,44897.0135,46966.89262650836,42279.78037349165,0.10936760749522446,2844.496500000001,1782.5564999999988,UP,2026-06-22,1,1,0,0,0.01725320490396638,-0.12165017672073777,0.8911733606351018,1.059360370730547,0.10882663936489821
 2026-06-23,47795.09,48218.87,47100.65,47100.65,1672355337665.0,45069.826,47352.1529750879,42441.874024912104,0.11370587564681708,2030.8240000000005,2030.8240000000005,IN,,0,0,0,1,-0.005580296118469519,-0.10336796008681945,0.0,1.155849418214079,0.37897730321404166
 2026-06-24,46909.98,46909.98,45819.71,46043.6,1539046268153.0,45195.7375,47632.17801528984,42507.47398471016,0.11031802855929497,847.8624999999956,623.9724999999962,IN,,0,0,0,1,-0.03514884595676404,-0.07824025474282478,0.20535280251680646,1.0641049086722956,0.0
@@ -121,6 +120,7 @@ Generated at: 2026-08-02 22:38:37 UTC
 2026-07-29,41491.48,41698.39,39384.85,40039.18,1149185294964.0,44650.2665,47908.09652081359,42001.109479186416,0.16094515413210256,-4611.086499999998,-5265.416499999999,DN,2026-07-28,2,0,0,0,-0.1762344804999896,0.043939927641561016,0.28282631810991016,1.100344370077095,0.08943437329806105
 2026-07-30,40048.94,41155.42,39404.65,39933.3,1146937829185.0,44295.982,48243.388511940975,41057.14448805902,0.17910848031705537,-4362.682000000001,-4891.332000000002,DN,2026-07-28,3,0,0,0,-0.18760366373503068,0.02537125123581226,0.3019528550295027,1.1099295088789767,0.631996207383036
 2026-07-31,41610.41,43214.36,41610.41,43119.75,887732405136.0,44114.7615,48262.87501008582,40329.088989914184,0.17372066230913238,-995.0115000000005,-2504.351499999997,IN,,0,0,0,1,-0.11658512559533668,-0.06325912042130877,0.9410143707721558,0.8673069822895001,0.05898562922784423
+2026-08-03,42780.42,43784.19,42780.42,43386.41,885506043091.0,43945.051,47946.58429269471,40282.93870730529,0.16567892225499273,-558.640999999996,-1164.6310000000012,IN,,0,0,0,1,-0.10376991695139243,-0.07062163365551016,0.6037139982266881,0.8733453283739683,0.39628600177331186
 
 ```
 
@@ -187,12 +187,12 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
 
 ```text
 ﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi
-2026-07-24,-60950489295,4763491262,-11151495033,-67338493066,333,645,87,-312,0.34049079754601225,-76260,7107,83367
 2026-07-27,8040249858,481268077,-7856984424,664533511,436,542,96,-106,0.4458077709611452,-78699,6870,85569
 2026-07-28,-87484625299,1611819893,-31729733512,-117602538918,96,931,43,-835,0.0934761441090555,-82255,7401,89656
 2026-07-29,-22251858551,5705652231,-18599014431,-35145220751,243,777,49,-534,0.23823529411764705,-82785,11982,94767
 2026-07-30,-48311819675,13997412733,-15226533793,-49540940735,224,775,58,-551,0.22422422422422422,-81017,13822,94839
 2026-07-31,67553825161,36020110243,-16259524590,87314410814,892,145,37,747,0.8601735776277725,-82515,12704,95219
+2026-08-03,-19190915634,23324680573,-20653372342,-16519607403,648,354,70,294,0.6467065868263473,-90038,9876,99914
 
 ```
 
@@ -200,7 +200,7 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
 
 ```text
 ﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi,latest_institutional_date,latest_foreign_net_amount,latest_investment_trust_net_amount,latest_dealer_net_amount,latest_institutional_net_amount,latest_breadth_date,latest_advancers_stock,latest_decliners_stock,latest_unchanged_stock,latest_adl_net_stock,latest_adl_ratio_stock,latest_foreign_tx_oi_date,latest_foreign_tx_net_oi,latest_foreign_tx_long_oi,latest_foreign_tx_short_oi,institutional_net_amount_3d_sum,foreign_net_amount_3d_sum,adl_net_stock_3d_sum,foreign_tx_net_oi_3d_change,institutional_net_amount_5d_sum,foreign_net_amount_5d_sum,adl_net_stock_5d_sum,foreign_tx_net_oi_5d_change,institutional_net_amount_10d_sum,foreign_net_amount_10d_sum,adl_net_stock_10d_sum,foreign_tx_net_oi_10d_change
-2026-07-31,67553825161,36020110243,-16259524590,87314410814,892,145,37,747,0.8601735776277725,-82515,12704,95219,2026-07-31,67553825161,36020110243,-16259524590,87314410814,2026-07-31,892,145,37,747,0.8601735776277725,2026-07-31,-82515,12704,95219,2628249328,-3009853065,-338,270,-114309756079,-82454228506,-1279,-3816,-181648249145,-143404717801,-1591,-6255
+2026-08-03,-19190915634,23324680573,-20653372342,-16519607403,648,354,70,294,0.6467065868263473,-90038,9876,99914,2026-08-03,-19190915634,23324680573,-20653372342,-16519607403,2026-08-03,648,354,70,294,0.6467065868263473,2026-08-03,-90038,9876,99914,21253862676,51089852,490,-9021,-131493896993,-109685393998,-879,-7783,-130829363482,-101645144140,-985,-11339
 
 ```
 
@@ -3523,16 +3523,16 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
   "risk_level": "medium",
   "score": 0.5,
   "interpretations": [
-    "台指期維持明顯正價差（2607點，6.05%），期貨端尚未轉為全面悲觀。",
+    "台指期維持明顯正價差（2341點，5.39%），期貨端尚未轉為全面悲觀。",
     "缺少外資台指期淨部位，無法判斷外資避險強度。"
   ],
   "writer_guidance": "衍生性商品結構沒有明確單邊訊號，文章應以現貨技術面為主、期權作輔助。",
-  "days_lag_vs_spot": 22,
+  "days_lag_vs_spot": 25,
   "basis": {
     "tx_close": 45727.0,
-    "spot_close": 43119.75,
-    "basis_points": 2607.25,
-    "basis_pct": 0.060465332011433275,
+    "spot_close": 43386.41,
+    "basis_points": 2340.59,
+    "basis_pct": 0.05394753795024747,
     "basis_z20": null
   },
   "foreign_futures": null,
@@ -3542,8 +3542,8 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
   "option_wall": {
     "call_pressure_strike": 46000.0,
     "put_support_strike": 45000.0,
-    "call_distance_pct": 0.06679653754949878,
-    "put_distance_pct": 0.04360530847233576,
+    "call_distance_pct": 0.060239830859478725,
+    "put_distance_pct": 0.03719113888427267,
     "call_max_oi": 13589.0,
     "put_max_oi": 5258.0,
     "source": "15_options_oi_summary.json"
@@ -3579,7 +3579,7 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
 
 ## 目前程式判定
 
-- 現貨狀態：IN｜從DN回到通道內第1天
+- 現貨狀態：IN｜從DN回到通道內第2天
 - 現貨動作：等回測
 - 下一步：等待：UP新突破且StartBreakoutPct>0.36%→追
 - 衍生性商品偏向：neutral
@@ -3601,71 +3601,71 @@ sklearn,2,BreakoutPct <= 0.36% 且 BB_BW <= 5.53%,64,34.88,69.77,83.72,30.23,39.
 ```text
 {
   "data_date": "2026-07-08",
-  "spot_close": 43119.75,
+  "spot_close": 43386.41,
   "put_call_oi_ratio": 0.8357831803942767,
   "call_max_oi_strike": 46000.0,
   "call_max_oi": 13589.0,
-  "call_max_oi_distance_pct": 6.679653754949879,
+  "call_max_oi_distance_pct": 6.023983085947872,
   "put_max_oi_strike": 45000.0,
   "put_max_oi": 5258.0,
-  "put_max_oi_distance_pct": 4.360530847233576,
+  "put_max_oi_distance_pct": 3.719113888427267,
   "top_call_oi_strikes": [
     {
       "strike": 46000.0,
       "open_interest": 13589.0,
-      "distance_pct": 6.679653754949879
+      "distance_pct": 6.023983085947872
     },
     {
       "strike": 50000.0,
       "open_interest": 7309.0,
-      "distance_pct": 15.956145385815084
+      "distance_pct": 15.243459876030297
     },
     {
       "strike": 48000.0,
       "open_interest": 5907.0,
-      "distance_pct": 11.317899570382481
+      "distance_pct": 10.633721480989085
     },
     {
       "strike": 49000.0,
       "open_interest": 5589.0,
-      "distance_pct": 13.637022478098784
+      "distance_pct": 12.93859067850969
     },
     {
       "strike": 49500.0,
       "open_interest": 5387.0,
-      "distance_pct": 14.796583931956933
+      "distance_pct": 14.091025277269992
     }
   ],
   "top_put_oi_strikes": [
     {
       "strike": 45000.0,
       "open_interest": 5258.0,
-      "distance_pct": 4.360530847233576
+      "distance_pct": 3.719113888427267
     },
     {
       "strike": 44000.0,
       "open_interest": 3792.0,
-      "distance_pct": 2.0414079395172746
+      "distance_pct": 1.4142446909066606
     },
     {
       "strike": 43000.0,
       "open_interest": 3744.0,
-      "distance_pct": -0.27771496819902713
+      "distance_pct": -0.8906245066139453
     },
     {
       "strike": 42000.0,
       "open_interest": 3726.0,
-      "distance_pct": -2.596837875915329
+      "distance_pct": -3.1954937041345515
     },
     {
       "strike": 40000.0,
       "open_interest": 3210.0,
-      "distance_pct": -7.235083691347932
+      "distance_pct": -7.805232099175763
     }
   ],
   "options_sentiment_interpretation": "Put and Call OI are relatively balanced; options positioning does not show an extreme one-sided sentiment signal.",
-  "call_wall_interpretation": "Major Call OI is concentrated at 46000, about 6.68% above spot; it is an overhead reference but not immediate pressure.",
-  "put_wall_interpretation": "Major Put OI is concentrated at 45000, about 4.36% above spot; spot has fallen below the put wall, so prior support may turn into pressure.",
+  "call_wall_interpretation": "Major Call OI is concentrated at 46000, about 6.02% above spot; it is an overhead reference but not immediate pressure.",
+  "put_wall_interpretation": "Major Put OI is concentrated at 45000, about 3.72% above spot; spot has fallen below the put wall, so prior support may turn into pressure.",
   "warnings": [],
   "missing_columns": []
 }
