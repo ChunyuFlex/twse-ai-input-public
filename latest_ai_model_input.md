@@ -1,6 +1,6 @@
 # AI_MODEL_INPUT
 
-Generated at: 2026-08-29 03:23:56 UTC
+Generated at: 2026-08-29 23:37:22 UTC
 
 
 ## 00_README.md
@@ -9,7 +9,7 @@ Generated at: 2026-08-29 03:23:56 UTC
 # TAIEX AI 模型輸入資料包
 
 資料最新日期：2026-08-28
-產生批次：20260829_032350
+產生批次：20260829_233716
 
 這個資料夾只放需要餵給 AI 的資料。完整長期資料仍用於回測，但 AI 主要閱讀近期盤勢、長期統計摘要，以及衍生性商品判讀摘要。
 
@@ -53,7 +53,7 @@ Generated at: 2026-08-29 03:23:56 UTC
 
 ```text
 {
-  "generated_at": "20260829_032350",
+  "generated_at": "20260829_233716",
   "data_latest_date": "2026-08-28",
   "signal": "📌 今日一行｜2026-08-28｜IN｜從DN回到通道內第21天｜StartBreakoutPct=NA｜TodayBreakoutPct=NA｜BB_MID=45,074.79｜Close-BB_MID=+1,256.66｜Low-BB_MID=+996.04｜現在：等回測｜下一步：等待：UP新突破且StartBreakoutPct>0.36%→追",
   "status": "IN｜從DN回到通道內第21天",
