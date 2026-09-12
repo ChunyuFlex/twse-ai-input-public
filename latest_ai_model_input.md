@@ -1,6 +1,6 @@
 # AI_MODEL_INPUT
 
-Generated at: 2026-09-11 23:32:53 UTC
+Generated at: 2026-09-12 23:23:07 UTC
 
 
 ## 00_README.md
@@ -9,7 +9,7 @@ Generated at: 2026-09-11 23:32:53 UTC
 # TAIEX AI 模型輸入資料包
 
 資料最新日期：2026-09-11
-產生批次：20260911_233247
+產生批次：20260912_232302
 
 這個資料夾只放需要餵給 AI 的資料。完整長期資料仍用於回測，但 AI 主要閱讀近期盤勢、長期統計摘要，以及衍生性商品判讀摘要。
 
@@ -53,7 +53,7 @@ Generated at: 2026-09-11 23:32:53 UTC
 
 ```text
 {
-  "generated_at": "20260911_233247",
+  "generated_at": "20260912_232302",
   "data_latest_date": "2026-09-11",
   "signal": "📌 今日一行｜2026-09-11｜IN｜從UP回到通道內第4天｜StartBreakoutPct=NA｜TodayBreakoutPct=NA｜BB_MID=46,025.29｜Close-BB_MID=+159.56｜Low-BB_MID=-82.85｜現在：全出｜下一步：突破：UP新突破且StartBreakoutPct>0.36%→追；回測完成：等UP新突破且StartBreakoutPct>0.36%→追",
   "status": "IN｜從UP回到通道內第4天",
@@ -187,7 +187,6 @@ sklearn,5,BreakoutPct > 0.36% 且 BreakoutPct <= 0.68%,60,41.94,74.19,93.55,32.2
 
 ```text
 ﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi
-2026-09-02,-91354536093,-3527707423,-20361619368,-115243862884,398,563,106,-165,0.4141519250780437,-85329,6686,92015
 2026-09-03,-48145930763,693561823,-16707506431,-64159875371,209,776,86,-567,0.21218274111675126,-81575,7604,89179
 2026-09-04,56212953803,-910866463,6370061244,61672148584,762,210,102,552,0.7839506172839507,-82389,8153,90542
 2026-09-07,88307738645,8724052469,15687071384,112718862498,404,573,100,-169,0.413510747185261,-79399,10793,90192
@@ -202,7 +201,7 @@ sklearn,5,BreakoutPct > 0.36% 且 BreakoutPct <= 0.68%,60,41.94,74.19,93.55,32.2
 
 ```text
 ﻿Date,foreign_net_amount,investment_trust_net_amount,dealer_net_amount,institutional_net_amount,advancers_stock,decliners_stock,unchanged_stock,adl_net_stock,adl_ratio_stock,foreign_tx_net_oi,foreign_tx_long_oi,foreign_tx_short_oi,latest_institutional_date,latest_foreign_net_amount,latest_investment_trust_net_amount,latest_dealer_net_amount,latest_institutional_net_amount,latest_breadth_date,latest_advancers_stock,latest_decliners_stock,latest_unchanged_stock,latest_adl_net_stock,latest_adl_ratio_stock,latest_foreign_tx_oi_date,latest_foreign_tx_net_oi,latest_foreign_tx_long_oi,latest_foreign_tx_short_oi,institutional_net_amount_3d_sum,foreign_net_amount_3d_sum,adl_net_stock_3d_sum,foreign_tx_net_oi_3d_change,institutional_net_amount_5d_sum,foreign_net_amount_5d_sum,adl_net_stock_5d_sum,foreign_tx_net_oi_5d_change,institutional_net_amount_10d_sum,foreign_net_amount_10d_sum,adl_net_stock_10d_sum,foreign_tx_net_oi_10d_change
-2026-09-11,-89270444926,8213725742,-30201800886,-111258520070,229,779,68,-550,0.22718253968253968,-85067,8242,93309,2026-09-11,-89270444926,8213725742,-30201800886,-111258520070,2026-09-11,229,779,68,-550,0.22718253968253968,2026-09-11,-85067,8242,93309,-138880400657,-106680221995,-798,-4001,-38676186635,-5103920671,-1390,-5668,-156407776306,-88391433724,-1570,262
+2026-09-11,-89270444926,8213725742,-30201800886,-111258520070,229,779,68,-550,0.22718253968253968,-85067,8242,93309,2026-09-11,-89270444926,8213725742,-30201800886,-111258520070,2026-09-11,229,779,68,-550,0.22718253968253968,2026-09-11,-85067,8242,93309,-138880400657,-106680221995,-798,-4001,-38676186635,-5103920671,-1390,-5668,-41163913422,2963102369,-1405,-3492
 
 ```
 
