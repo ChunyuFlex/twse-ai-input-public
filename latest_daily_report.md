@@ -1,6 +1,6 @@
 # 每日台股大盤 AI Input 更新
 
-- 產生時間：2026-09-19 23:34:00
+- 產生時間：2026-09-20 23:31:59
 - 執行環境：GitHub Actions / Python 3.12.14
 
 ## 1. 今日更新結果
@@ -26,17 +26,17 @@
 - 衍生性商品風險：medium_high
 
 ## 4. 更新檔案
-- `twse/taiex_ohlc_amount_daily.csv`：2026-09-19 23:32:36，377,914 bytes
-- `twse/twse_market_context_daily.csv`：2026-09-19 23:33:17，1,040 bytes
-- `twse/twse_market_context_summary.csv`：2026-09-19 23:33:17，1,293 bytes
-- `twse/taifex_derivatives_daily.csv`：2026-09-19 23:33:58，7,829 bytes
-- `twse/taifex_options_oi_latest.csv`：2026-09-19 23:32:16，133,010 bytes
-- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-09-19 23:33:59，1,431 bytes
-- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-09-19 23:33:17，1,040 bytes
-- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-09-19 23:33:17，1,293 bytes
-- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-09-19 23:34:00，1,025 bytes
-- `twse/AI_MODEL_INPUT/15_options_oi_summary.json`：2026-09-19 23:34:00，2,010 bytes
-- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-09-19 23:33:59，1,972 bytes
+- `twse/taiex_ohlc_amount_daily.csv`：2026-09-20 23:31:03，377,914 bytes
+- `twse/twse_market_context_daily.csv`：2026-09-20 23:31:25，924 bytes
+- `twse/twse_market_context_summary.csv`：2026-09-20 23:31:25，1,291 bytes
+- `twse/taifex_derivatives_daily.csv`：2026-09-20 23:31:57，7,829 bytes
+- `twse/taifex_options_oi_latest.csv`：2026-09-20 23:30:37，133,010 bytes
+- `twse/AI_MODEL_INPUT/01_latest_signal.json`：2026-09-20 23:31:59，1,431 bytes
+- `twse/AI_MODEL_INPUT/09_market_context_daily.csv`：2026-09-20 23:31:25，924 bytes
+- `twse/AI_MODEL_INPUT/10_market_context_summary.csv`：2026-09-20 23:31:25，1,291 bytes
+- `twse/AI_MODEL_INPUT/13_derivatives_signal_summary.json`：2026-09-20 23:31:59，1,025 bytes
+- `twse/AI_MODEL_INPUT/15_options_oi_summary.json`：2026-09-20 23:31:59，2,010 bytes
+- `twse/AI_MODEL_INPUT/14_ai_writer_prompt.md`：2026-09-20 23:31:59，1,972 bytes
 
 ## 5. 失敗輸出
 ### Generate AI article
